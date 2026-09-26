@@ -1,0 +1,30 @@
+name: Epic
+description: Group related stories around a larger capability.
+type: Epic
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Capability and user value
+      description: What capability are we building, who benefits, and why does it matter?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Describe what this epic covers and any relevant boundaries.
+    validations:
+      required: true
+  - type: textarea
+    id: completion
+    attributes:
+      label: Completion criteria
+      description: What observable outcomes will show this capability is delivered?
+    validations:
+      required: true
+  - type: textarea
+    id: stories
+    attributes:
+      label: Related stories
+      description: Optional links to existing stories or a list of stories to create. Add them as sub-issues after creating the epic; links here do not create that relationship automatically.

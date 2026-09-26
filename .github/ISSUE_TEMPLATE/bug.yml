@@ -1,0 +1,40 @@
+name: Bug
+description: Report behavior that differs from what is expected.
+type: Bug
+body:
+  - type: markdown
+    attributes:
+      value: Please report security vulnerabilities privately using the repository's security policy.
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. ...
+        2. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include the version or commit, operating system, and relevant configuration.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Additional context
+      description: Optional logs, screenshots, or examples. Remove credentials, personal data, and private conversation content.
