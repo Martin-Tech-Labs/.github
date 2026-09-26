@@ -1,0 +1,30 @@
+name: User Story
+description: Describe a capability and the value it provides.
+type: User Story
+body:
+  - type: textarea
+    id: story
+    attributes:
+      label: User story
+      placeholder: |
+        As a ...
+        I want ...
+        So that ...
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Describe observable outcomes from the user's perspective.
+      placeholder: |
+        Given ...
+        When ...
+        Then ...
+    validations:
+      required: true
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Implementation notes
+      description: Optional technical tasks, dependencies, or open questions.
